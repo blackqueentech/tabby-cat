@@ -1,3 +1,4 @@
+window.onload = function() {
 var counter = 3;
 var limit = 15;
 
@@ -11,4 +12,5 @@ function addLinks(divName){
 	document.getElementById(divName).appendChild(newdiv);
 	counter++;
     }
+}
 }

@@ -17,7 +17,7 @@
 	<label for="sessionTitle">Title of Session</label>
 	<input type="text" class="form-control" id="sessionTitle" placeholder="Purrfect title">
       </div>
-      <div id="addLinks">
+      <div id="linkList">
 	Link 1
 	<input type="text" class="form-control" name="sessionLinks[]"><br/>
 	Link 2
@@ -25,7 +25,7 @@
 	Link 3
 	<input type="text" class="form-control" name="sessionLinks[]"><br/>
       </div>
-	<button type="button" class="btn btn-default" onclick="addLinks('addLinks');">
+	<button type="button" class="btn btn-default" id="addLink">
 	  <span class='glyphicon glyphicon-plus' aria-hidden='true'></span> Add Another Link
 	</button><br><br>
       <button type="submit" class="btn btn-warning">Create Session</button>
