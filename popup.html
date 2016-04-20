@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Tabby Cat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>    
+    <script src="script.js"></script>
+  <link rel="stylesheet" href="menu.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <ul class="">
+	<li><a href="#" id="createNew">Create New Session</a></li>
+	<li>Open Session</li>
+	<li>Add tab to session</li>
+	<li>Add all tabs to session</li>
+      </ul>
+    </div>
+    <script>
+      var createNew = document.getElementById('createNew');
+      createNew.onclick = newSessionPage;
+      function newSessionPage() {
+        var newURL = "new.html";
+        chrome.tabs.create({ url: newURL });
+      }
+   </script>
+  </body>
+</html>
+
